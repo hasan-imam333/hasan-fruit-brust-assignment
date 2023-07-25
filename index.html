@@ -2,34 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit Brust</title>
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    <!-- For DaisyUI and cdn.tailwindcss -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- for tailwind color -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Brust</title>
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <!-- For DaisyUI and cdn.tailwindcss -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- for tailwind color -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
           }
         }
-      </script>
-      <!-- For font lato -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-<style>
-    .font-lato{
+      }
+    }
+  </script>
+  <!-- For font lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    .font-lato {
       font-family: 'Lato', sans-serif;
     }
-</style>
+  </style>
 </head>
 
 <body class="font-family">
@@ -42,14 +42,18 @@
               <div class="flex">
                 <img src="images/logo.png" alt="">
                 <h3 class="p-4">Fruit Brust</h3>
-            </div>
+              </div>
             </div>
             <div class="flex justify-end text-right">
               <div class="dropdown  ">
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
                 </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <ul tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                   <li><a>Home</a></li>
                   <li><a>About Us</a></li>
                   <li><a>Shop</a></li>
@@ -57,7 +61,7 @@
                 </ul>
               </div>
             </div>
-     
+
           </div>
           <div class="navbar-start hidden lg:flex ">
             <ul class=" px-1 flex gap-5 -mr-20 font-semibold">
@@ -74,15 +78,114 @@
         </div>
         <div class=" navbar-end hidden lg:block text-end ">
           <input type="text" class="rounded-3xl p-1" placeholder="Search here">
-           </div>
+        </div>
       </div>
     </nav>
-
   </header>
-
-
   <main>
+    <!-- banner section--Exotic taste -->
+    <section class="mt-10 mx-4 lg:mx-20">
+      <!-- Sliders -->
+      <div class="relative">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full ">
+            <img src="/images/banner1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <!-- writing start -->
+              <div class="text-center text-white ">
+                <h2 class="text-3xl font-bold">Exotic tastes at your doorstep</h2>
+                <p class=''>We supply highly quality organic products</p>
+                <div class="mt-2 pb-2">
+                  <button class=" bg-[#F85559] border-0 text-white px-4 py-2 rounded-md">Shop Now</button>
+                </div>
+              </div>
+              <!-- Writing done -->
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="/images/banner2.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <!-- writing start -->
+              <div class="text-center text-white ">
+                <h2 class="text-3xl font-bold">Exotic tastes at your doorstep</h2>
+                <p class=''>We supply highly quality organic products</p>
+                <div class="mt-2 pb-2">
+                  <button class=" bg-[#F85559] border-0 text-white px-4 py-2 rounded-md">Shop Now</button>
+                </div>
+              </div>
+              <!-- Writing done -->
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="/images/banner3.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <!-- writing start -->
+              <div class="text-center text-white ">
+                <h2 class="text-3xl font-bold">Exotic tastes at your doorstep</h2>
+                <p class=''>We supply highly quality organic products</p>
+                <div class="mt-2 pb-2">
+                  <button class=" bg-[#F85559] border-0 text-white px-4 py-2 rounded-md">Shop Now</button>
+                </div>
+              </div>
+              <!-- Writing done -->
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="/images/banner4.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <!-- writing start -->
+              <div class="text-center text-white ">
+                <h2 class="text-3xl font-bold">Exotic tastes at your doorstep</h2>
+                <p class=''>We supply highly quality organic products</p>
+                <div class="mt-2 pb-2">
+                  <button class=" bg-[#F85559] border-0 text-white px-4 py-2 rounded-md">Shop Now</button>
+                </div>
+              </div>
+              <!-- Writing done -->
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+        <!-- Various Fruits Images -->
+      <div class="absolute -bottom-20 left-40 hidden lg:block">
+        <div class="flex justify-center gap-5 bg-[white] p-8 ">
+          <div>
+            <img src="images/fruit1.png" alt="">
+            <h4 class="text-center">Grape</h4>
+          </div>
+          <div>
+            <img src="images/fruit2.png" alt="">
+            <h4 class="text-center">Orange</h4>
+          </div>
+          <div>
+            <img src="images/fruit3.png" alt="">
+            <h4 class="text-center">Mango</h4>
+          </div>
+          <div>
+            <img src="images/fruit4.png" alt="">
+            <h4 class="text-center">Strawberry</h4>
+          </div>
+          <div>
+            <img src="images/fruit5.png" alt="">
+            <h4 class="text-center">Pomegranate</h4>
+          </div>
+        </div>
+      </div>
+          
+       
 
+      </div>
+
+    </section>
+    <!-- Deal of the day -->
+  
 
   </main>
   <footer>
